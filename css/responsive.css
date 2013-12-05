@@ -1014,9 +1014,7 @@
   .nav-collapse.collapse {
     overflow: hidden;
   }
-  .navigation > ul li {
-    padding: 0 !important;
-  }
+  .navigation > ul li {}
   .navbar .btn-navbar {
     display: block;
   }

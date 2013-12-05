@@ -11,10 +11,10 @@
                     <div class="row">
                         <article class="span12">
                             <div class="row">
-                                <article class="span6">
+                                <article class="span4">
                                     {{widget('logo', 'name', {"defaultlogo": asset('images/logo.png')})|raw}}
                                 </article>
-                                <article class="span6">
+                                <article class="span8">
                                     {{widget('extendednavigation', 'extendednavigation', {"align":"center"})|raw}}
                                 </article>
                             </div>
@@ -103,14 +103,14 @@
                                 {{widget('space', 'space', {'height': '50'})|raw}}
                             </article>
                             <article class="span6">
-                                <figure class="fleft">{{widget('image', 'image1', { 'src': asset('images/page1-img1.jpg'), 'imageWidth': '268px'})|raw}}</figure>
+                                <figure class="img fleft">{{widget('image', 'image1', { 'src': asset('images/page1-img1.jpg'), 'imageWidth': '268px'})|raw}}</figure>
                                 <div class="overflow">
                                     {{widget('content', 'title8', {content: '<h2>Fusce euismod consequat ante Lorem ipsum dolor sit amet</h2>', lines: 'all'})|raw}}
                                     {{widget('content', 'text7', {content: '<dl class="item_info_dl"><dd>May 5th, 2013</dd><dd><a href="#">35 Comments</a></dd></dl><p>Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipis</p>', lines: 'all'})|raw}}
                                 </div>
                                 <div class="clear"></div>
                                 {{widget('space', 'space', {'height': '50'})|raw}}
-                                <figure class="fleft">{{widget('image', 'image2', { 'src': asset('images/page1-img2.jpg'), 'imageWidth': '268px'})|raw}}</figure>
+                                <figure class="img fleft">{{widget('image', 'image2', { 'src': asset('images/page1-img2.jpg'), 'imageWidth': '268px'})|raw}}</figure>
                                 <div class="overflow">
                                     {{widget('content', 'title9', {content: '<h2>ellentesque sed doloAliquam congue fermentum nis</h2>', lines: 'all'})|raw}}
                                     {{widget('content', 'text8', {content: '<dl class="item_info_dl"><dd>May 5th, 2013</dd><dd><a href="#">35 Comments</a></dd></dl><p>Consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliqueulla venenatis</p>', lines: 'all'})|raw}}
@@ -129,17 +129,14 @@
             <div class="row">
                 <article class="span12">
 
-                    {{widget('space', 'space', {'height': '50'})|raw}}
                     {{zone('main')|raw}}
 
                     <div class="row">
                         <article class="span6">
-                            {{widget('space', 'space', {'height': '50'})|raw}}
                             {{widget('content', 'text9', {content: '<blockquote><h2>Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h2><p>Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipi scing elit. Pellentesque sed dolor.</p></blockquote>', lines: 'all'})|raw}}
                             {{widget('space', 'space', {'height': '50'})|raw}}
                         </article>
                         <article class="span6">
-                            {{widget('space', 'space', {'height': '50'})|raw}}
                             {{widget('content', 'text10', {content: '<blockquote><h2>ipsum dolor sit amet, cFusce euismod onsequat onsec teur tuer adipiscing elit</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam.</p></blockquote>', lines: 'all'})|raw}}
                             {{widget('space', 'space', {'height': '50'})|raw}}
                         </article>
