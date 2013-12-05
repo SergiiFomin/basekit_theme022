@@ -1,0 +1,107 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+    <div class="global whitebg">
+        <!--header-->
+        <header>
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <article class="span12">
+                            <div class="row">
+                                <article class="span6">
+                                    {{widget('logo', 'name', {"defaultlogo": asset('images/logo.png')})|raw}}
+                                </article>
+                                <article class="span6">
+                                    {{widget('extendednavigation', 'extendednavigation', {"align":"center"})|raw}}
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--content-->
+        <div class="container whitebg">
+            <div class="row">
+                <article class="span12">
+                    <div class="row">
+                        <article class="span4">
+
+                            {{widget('content', 'title1', {content: '<h1>advantages</h1>', lines: 'all'})|raw}}
+                            {{widget('content', 'text1', {content: '<h4>Pellentesque sed dolor. Aliquam congue fermentum nisl</h4><p>Fusce suscipit varius mi. Lorem ipsum dolor sit amet, consect e tuer adipiscing elit. Praesent vestibulum molestie lacus. Mor bi nunc odio, gravida at, cursus nec, luctus a, lorem. Maece na stristique orci ac sem.</p><h4>Pellentesque sed dolor. Aliquam congue fermentum nisl</h4><p>Fusce suscipit varius mi. Lorem ipsum dolor sit amet, consect e tuer adipiscing elit. Praesent vestibulum molestie lacus. Mor bi nunc odio, gravida at, cursus nec, luctus a, lorem. Maece na stristique orci ac sem.</p><h4>Pellentesque sed dolor. Aliquam congue fermentum nisl</h4><p>Fusce suscipit varius mi. Lorem ipsum dolor sit amet, consect e tuer adipiscing elit. Praesent vestibulum molestie lacus. Mor bi nunc odio, gravida at, cursus nec, luctus a, lorem. Maece na stristique orci ac sem.</p>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+
+                        </article>
+                        <article class="span8">
+
+                            {{widget('content', 'title2', {content: '<h1>a few words about us</h1>', lines: 'all'})|raw}}
+                            {{widget('content', 'text2', {content: '<h4>Pellentesque sed dolor. Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus.</h4><p>Fusce suscipit varius mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, conseteter adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent ves tibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictu m magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit.</p><p><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem.</strong></p><p>Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, conseteter adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci.</p>', lines: 'all'})|raw}}
+                            {{widget('button', 'button', {italic: false, text:'Read More', 'align':'widget-align-left'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+
+                        </article>
+                    </div>
+
+                    <div class="row">
+                        <article class="span4">
+
+                            {{widget('content', 'title3', {content: '<h1>testimonials</h1>', lines: 'all'})|raw}}
+                            {{widget('content', 'text3', {content: '<p><em>Fusce suscipit varius mi. Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent vestibulum molestie lacus. Mor bi nunc odio, gravida at, cursus nec,luctus a, lorem. Maecen as tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<small>- Sara Tomson</em></small></p><p><em>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Prae sent vestibulum molestie lacus. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit.<small>- Miranda Lopes</em></small></p><p><em>Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Mae cenas tristique orci ac sem. Duis ultricies pharetra magna. Do nec accum san malesuada orci. Donec sit amet eros. Lorem ip sum dolor sit amet, consectetuer adipiscing elit.<small>- Linda Grey</em></small></p>', lines: 'all'})|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+
+                        </article>
+                        <article class="span8">
+
+                            {{widget('content', 'title4', {content: '<h1>photos</h1>', lines: 'all'})|raw}}
+                            {{widget('gallery', 'photos',
+                            {'showDescription': true,
+                            'showTitle': true,
+                            'images':
+                            [
+                            {'imageHeight':'216', 'imageWidth':'231', 'url':asset('images/photo/1.jpg'), 'title':'test title', 'description': 'test desc'},
+                            {'imageHeight':'216', 'imageWidth':'231', 'url':asset('images/photo/2.jpg'), 'title':'test title', 'description': 'test desc'},
+                            {'imageHeight':'216', 'imageWidth':'231', 'url':asset('images/photo/3.jpg'), 'title':'test title', 'description': 'test desc'},
+                            {'imageHeight':'216', 'imageWidth':'231', 'url':asset('images/photo/4.jpg'), 'title':'test title', 'description': 'test desc'},
+                            {'imageHeight':'216', 'imageWidth':'231', 'url':asset('images/photo/5.jpg'), 'title':'test title', 'description': 'test desc'}
+                            ]
+                            })|raw}}
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+
+                        </article>
+                    </div>
+
+                    {{zone('main')|raw}}
+
+                </article>
+            </div>
+        </div>
+    </div>   
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <section class="span12">
+                    <div class="row">
+                        <article class="span6">
+
+                            {{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'&copy Copyright - Elementary School'})|raw}}
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+                        <article class="span6">
+
+                            {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer> 
+</div>
+
+{% endblock %}
